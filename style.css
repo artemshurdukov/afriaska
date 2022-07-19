@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0 0;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  color: #1F3F68;
+  margin: 0;
+  max-width: 562px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16;
+}
+
+.header {
+  padding: 0 6%;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .header__menu {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.intro__container {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(8.84%, #98C3E8), color-stop(31.12%, rgba(152, 195, 232, 0)));
+  background-image: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.intro {
+  height: 100vh;
+  width: 100%;
+  padding-top: 189px;
+  background-image: url(images/intro__illustration.png);
+  background-repeat: no-repeat;
+  background-position: right 15% top 130px;
+}
+.intro .intro__text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.intro .intro__text .intro__p {
+  max-width: 425px;
+  color: #AFBAC8;
+  padding-top: 32px;
+  padding-bottom: 15%;
+}
+.intro .intro__text .intro__a {
+  padding-top: 101px;
+}
+.intro .intro__text .intro__button {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #5A98D0;
+  -webkit-box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+          box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  width: 220px;
+  height: 56px;
+}
+
+@media screen and (max-width: 1490px) {
+  .intro {
+    background-image: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .intro {
+    padding-top: 25%;
+  }
+
+  .intro__p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+}

@@ -1,0 +1,7 @@
+используемые шрифты:
+    Lato black
+    Lato regular
+    Lato Medium
+    Lato Bold
+
+    TimesNewRoman regular
