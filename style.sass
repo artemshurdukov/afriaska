@@ -3,21 +3,37 @@ body
     padding: 0 0
     
 h1 
-    font-family: 'Times New Roman', Times, serif
+    font-family: "Times New Roman", Times, serif
     font-style: normal
     font-weight: 400
     font-size: 64px
     line-height: 74px
-
-    
     color: #1F3F68
-
     margin: 0
     max-width: 562px
+
+h2
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 900
+    font-size: 36px
+    line-height: 46px
+
+    letter-spacing: 0.05em
+
+    color: #316099
+    width: 348px
+
+    margin: 0
+    padding: 0
 
 a
     text-decoration: none
     font-size: 16
+
+
+
+
 
 .header
     padding: 0 6%
@@ -36,11 +52,11 @@ a
 
 .intro
     height: 100vh
-    width: 100%
-    padding-top: 189px
     background-image: url(images/intro__illustration.png)
     background-repeat: no-repeat
-    background-position: right 15% top 130px
+    background-position: right 15% top 17%
+
+    padding-top: 189px 
 
     .intro__text 
         font-family: 'Lato', sans-serif
@@ -50,19 +66,20 @@ a
         line-height: 26px
         letter-spacing: 0.05em
 
-        padding-left: 15%
-        padding-right: 15%
-
+        margin: 0 auto
+        width: 70%
 
         .intro__p
             max-width: 425px
             color: #AFBAC8
 
             padding-top: 32px
-            padding-bottom: 15%
+            padding-bottom: 71px
+
+            margin: 0
 
         .intro__a
-            padding-top: 101px
+            margin-top: 101px
 
         .intro__button
             color: #ffffff
@@ -78,13 +95,130 @@ a
             width: 220px
             height: 56px   
 
+.whatwedo__container
+    height: 100%
+
+    .whatwedo
+        width: 70%
+        margin: 0 auto
+        height: 100%
+
+        padding: 180px 0
+
+        display: flex
+        justify-content: space-around
+        gap: 100px
+        
+        .whatwedo__card
+            height: 525px
+            width: 380px
+            border-radius: 10px
+
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+
+            display: flex
+            flex-direction: column
+
+            
+
+            .card__text
+                width: 70%
+                margin: 0 auto
+                padding-bottom: 48px
+
+            .card__header
+                font-family: 'Lato', sans-serif
+                font-style: normal
+                font-weight: 900
+                font-size: 20px
+                line-height: 30px
+
+                letter-spacing: 0.05em
+
+                color: #1F3F68
+
+                justify-self: start
+            
+            .card__desc
+                font-family: 'Lato',sans-serif
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 26px
+
+                letter-spacing: 0.05em
+
+                color: #1F3F68
+
+                opacity: 0.6
+            
+            .card__a
+                display: flex
+                align-items: center
+                
+                font-family: 'Lato',sans-serif
+                font-style: normal
+                font-weight: 900
+                font-size: 14px
+                line-height: 30px
+
+                letter-spacing: 0.05em
+
+                color: #5A98D0
+
+                gap: 25px
+            
+            .firstcard__img
+                width: 224px
+                height: 197px
+
+                margin: 0 auto
+            
+            .secondcard__img
+                width: 182px
+                height: 132px
+                margin: 0 75px
+
+            .thirdcard__img
+                width: 156px
+                height: 131px
+                margin: 0 auto
+                         
+
+.whatwedo__right
+    display: flex
+    flex-direction: column
+    gap: 100px
+    align-items: center
+
+.whatwedo__left
+    display: flex
+    flex-direction: column
+    gap: 158px
+    align-items: center
+
+
+
 
 @media screen and (max-width: 1490px)
+    h1
+        font-size: 50px
+        line-height: 60px
+    .intro__p
+        font-size: 14px
+    .intro
+        background-position: right 15% top 17%
+
+@media screen and (max-width: 1480px)
     .intro
         background-image: none
-    
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 900px)
+    .whatwedo
+        flex-direction: column 
+        justify-content: center
+
+@media screen and (max-width: 500px)
     .intro
         padding-top: 25% 
     .intro__p
@@ -93,6 +227,7 @@ a
     h1
         font-size: 32px
         line-height: 37px
+        
 
 
     
